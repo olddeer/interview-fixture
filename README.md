@@ -19,10 +19,9 @@ Once you are done, please send a **merge request** to this repository with your 
 Problem Description
 ===================
 
-We have supplied you with a small web server called fixture. It is written in Python, we offer two versions:
+We have supplied you with a small web server called fixture. It is written in Python, we offer one version:
 
-* fixture_2 will run with Python 2.6 or Python 2.7, while
-* fixture_3 will run with Python 3.6 or newer.
+* fixture will run with Python 2.6 or Python 2.7
 
 Pretty much any Unix based system will work (e.g. Linux or a Mac.)  You can probably even use a Windows if you want, but the verification tool may not work.
 
