@@ -19,9 +19,10 @@ Once you are done, please send a **merge request** to this repository with your 
 Problem Description
 ===================
 
-We have supplied you with a small web server called fixture. It is written in Python, we offer one version:
+We have supplied you with a small web server called fixture. It is written in Python, we offer two versions:
 
-* fixture will run with Python 2.6 or Python 2.7
+* fixture_2 will run with Python 2.6 or Python 2.7, while
+* fixture_3 will run with Python 3.6 or newer.
 
 Pretty much any Unix based system will work (e.g. Linux or a Mac.)  You can probably even use a Windows if you want, but the verification tool may not work.
 
@@ -119,15 +120,23 @@ How To Use The Tools
 ====================
 
 * Execute the web server. This mostly depends on your environment and the version you want to run.
-    - In most cases, you'll run the server with (Python 2.7 works)
+    - In most cases, you'll run the server with
 
         ```
-        fixture.py
+        cd be-challenge/
+        ./fixture_3.py
+        ```
+
+    - If you're using MacOS Mojave or older and don't have a custom python3 install, you should run the version for python2
+
+        ```
+        cd be-challenge/
+        ./fixture_2.py
         ```
 
   - If previous commands failed, read the documentation of the python version installed in your system.
 
-* By default the fixture emits **around** 1000 records. You can choose the number of records with `-n COUNT` option.  E.g. ` ./fixture.py -n 50000`
+* By default the fixture emits **around** 1000 records. You can choose the number of records with `-n COUNT` option.  E.g. ` ./fixture_3.py -n 50000`
 
 * The fixture server terminates fifteen (15) seconds after both sources are done.
 
